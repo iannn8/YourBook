@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Book</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icon.jpg">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    
+     <!-- navbar dan logo -->
+     <header>
+        <a href="home.html">Y-BOOK <br> <h5>(YOUR-BOOK)</h5></a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="genre.html">Genre</a></li>
+            <li><a href="music.html">Music Player</a></li>
+        </ul>
+</header>
+<section class="banner"></section>
+<script src="./script/scriptnav.js"></script>
+     <!-- content -->
+     <!-- slider-->
+     
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+              <img src="./assets/1.png">
+          </div>
+          <div class="slide">
+              <img src="./assets/2.png">
+          </div>
+          <div class="slide">
+              <img src="./assets/3.jpg">
+          </div>
+          <div class="slide">
+              <img src="./assets/4.jpg">
+            </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+    <h1>New🔥</h1>
+    <!-- top -->
+<div class="top">
+    <div class="cardl1">
+        <a href=""><img src="https://via.placeholder.com/1080x1080" alt=""></a>
+        <a href=""><h5>-Romance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Andratama </h5></a>
+        <a href=""><h3>1.Lorem, ipsum dolor.</h3></a>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, molestiae, id, quas quidem explicabo autem provident cupiditate </h6>
+    </div>
+    <div class="cardr1">
+        <a href=""><img src="https://via.placeholder.com/1080x1080" alt=""></a>
+        <a href=""><h5>-Romance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Andratama </h5></a>
+        <a href=""><h3>1.Lorem ipsum</h3></a>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, molestiae, id, quas quidem explicabo autem provident cupiditate</h6>
+    </div>
+</div>
+    <!-- middle -->
+<div class="middle">
+        <div class="cardl2">
+        <a href=""><img src="https://via.placeholder.com/1080x1080" alt=""></a>
+        <a href=""><h5>-Romance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Andratama</h5></a>
+        <a href=""><h3>2.Lorem, ipsum dolor.</h3></a>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, molestiae, id, quas quidem explicabo autem provident cupiditate</h6>
+        </div>
+        <div class="cardr2">
+        <a href=""><img src="https://via.placeholder.com/1080x1080" alt="">
+        </a><a href=""><h5>-Romance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Andratama</h5></a>
+        <a href=""><h3>2.Lorem ipsum</h3></a>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, molestiae, id, quas quidem explicabo autem provident cupiditate</h6>
+    </div>
+    
+</div>
+<!-- bottom-->
+<div class="bottom">
+    <div class="cardl3">
+        <a href=""><img src="https://via.placeholder.com/1080x1080" alt=""></a>
+        <a href="create.html"><h5>-Romance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Andratama</h5></a>
+        <a href="create.html"><h3>3.Lorem, ipsum dolor.</h3></a>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, molestiae, id, quas quidem explicabo autem provident cupiditate</h6>
+    </div> 
+    <div class="cardr3">
+        <a href=""><img src="https://via.placeholder.com/1080x1080" alt="">
+        </a><a href="create.html"><h5>-Romance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Andratama</h5></a>
+        <a href="create.html"><h3>3.Lorem ipsum</h3></a>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, molestiae, id, quas quidem explicabo autem provident cupiditate</h6>
+    </div>
+</div>
+<!-- #Poster-->
+    <div class="poster">
+        <img src="https://via.placeholder.com/1080x1080" alt="">
+        <h2>Lorem ipsum</h2>
+        <a href="create.html">Read More</a>
+    </div>
+
+<!-- Scroll button-->
+<div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+  </div>
+  <script src="./script/scriptup.js"></script>
+
+</body>
+</html>

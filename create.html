@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Book</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icon.jpg">
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <!-- navbar dan logo -->
+    <header>
+        <a href="home.html">Y-BOOK <br> <h5>(YOUR-BOOK)</h5></a>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="create.html">Create</a></li>
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="music.html">Music Player</a></li>
+    </ul>
+</header>
+<section class="banner"></section>
+<script src="./script/scriptnav.js"></script>
+
+   <!-- form -->
+   <div class="container">
+    <h1>Share Your Story Here!</h1>
+    <form method="POST" action="https://formsubmit.co/YourBook.indo@gmail.com" enctype="multipart/form-data">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="text" name="Judul" placeholder="Title" required>
+        <select name="Genre">
+            <option>Romance</option>
+            <option>Comedy</option>
+            <option>Drama</option>
+        </select>
+        <textarea name="Message" spellcheck="false" placeholder="Type Your Story Here..." required></textarea>
+        <button type="submit">Send</button>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/home.html">
+        <input type="hidden" name="_captcha" value="false">
+    
+</div>
+<!-- Upload cover-->
+<div class="preview">
+<div class="container">
+    <h3>COVER IMAGE</h3>
+<figure class="image-container">
+    <img id="chosen-image" src="https://via.placeholder.com/1080x1080">
+    <figcaption id="file-name"></figcaption>
+</figure>
+<input type="file" id="upload-button" name="attachment"  accept="image/png, image/jpeg">
+<label for="upload-button">
+    <i class="fas fa-upload"> &nbsp; Choose A Photo <br></i>
+</label>
+</div>
+</div>
+</form>
+
+<!--Script-->
+<script src="/script/script.js"></script>
+<!-- script textarea-->
+<script>
+            const textarea = document.querySelector("textarea");
+            textarea.addEventListener("keyup", e =>{
+              textarea.style.height = "63px";
+              let scHeight = e.target.scrollHeight;
+              textarea.style.height = `${scHeight}px`;
+            });
+          </script> 
+<!-- Poster-->
+<div class="judul">Trending🔥</div>
+<div class="poster">
+<div class="poster1">
+    <img src="https://via.placeholder.com/1080x1080">
+    <h1>Lorem, ipsum dolor</h1>
+    <a href=""><h3>Read More></h3></a>
+</div>
+<div class="poster2">
+    <img src="https://via.placeholder.com/1080x1080">
+    <h1>Lorem, ipsum dolor</h1>
+    <a href=""><h3>Read More></h3></a>
+</div>
+<div class="poster3">
+    <img src="https://via.placeholder.com/1080x1080">
+    <h1>Lorem, ipsum dolor</h1>
+    <a href=""><h3>Read More></h3></a>
+</div>
+<div class="poster4">
+    <img src="https://via.placeholder.com/1080x1080">
+    <h1>Lorem, ipsum dolor</h1>
+    <a href=""><h3>Read More></h3></a>
+</div>
+<div class="poster5">
+    <img src="https://via.placeholder.com/1080x1080">
+    <h1>Lorem, ipsum dolor</h1>
+    <a href=""><h3>Read More></h3></a>
+</div>
+</div>
+<!-- Scroll button-->
+<div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+  </div>
+  <script src="/script/scriptup.js"></script>
+
+              
+</body>
+</html>
